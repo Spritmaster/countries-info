@@ -40,8 +40,8 @@ else{
       <Select 
       placeholder="Filter by Region" 
       options={options}
-      onChange={handSelect}
-      isClearable={false}
+      onChange={handSelect}      
+      isClearable={true}
       ></Select>
     </div>
   )
