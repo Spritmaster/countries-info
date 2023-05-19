@@ -26,13 +26,13 @@ const Search = ({setCountries , getData}) => {
         }
     }
   return (
-    <div className=' bg-white max-w-md rounded-[5px] flex items-center gap-6  py-[18px] px-8'>
+    <div className=' bg-white dark:bg-[#2b3844] max-w-md rounded-[5px] flex items-center gap-6  py-[18px] px-8'>
         <img src={iconser} alt="" />
         <input
         value={name}
         onKeyDown={handleEnter}
         onChange={(e)=>setName(e.target.value)}
-        className='outline-none placeholder-[#848484] text-sm' type="text "  placeholder='Search for a country…'/>
+        className='outline-none placeholder-[#848484] dark:bg-[#2b3844] text-sm' type="text "  placeholder='Search for a country…'/>
     </div>
   )
 }

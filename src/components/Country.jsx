@@ -4,7 +4,7 @@ import React from 'react'
 const Country = ({name, flags , population ,region,capital}) => {
     const formatedPopulation =numeral(population).format("0,0")
   return (
-    <div className='max-w-xs bg-white overflow-hidden shadow-[0px_0px_7px_2px_#00000008] rounded-[5px]'>
+    <div className='max-w-xs bg-white dark:bg-[#2b3844] overflow-hidden shadow-[0px_0px_7px_2px_#00000008] rounded-[5px]'>
         <img 
         src={flags.png}
         alt={flags.alt} />
