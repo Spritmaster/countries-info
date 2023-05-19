@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@100;200;300;400;500;600;800;900&display=swap);
+
+:root{
+    --text-clr:#111517;
+}
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: #f2f2f2; 
+  color: var(--text-clr);
+}
+.main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(264px,1fr));
+    gap: 76px;
+}
+
