@@ -30,9 +30,11 @@ const Filterselect = ({setCountries ,getData}) => {
 if(e.value!=="all"){
   filterCountries(e.value)
 }
-else{
+else if(e.value==="all"){
   getData()
 }
+
+
   }
 
   return (
@@ -41,7 +43,7 @@ else{
       placeholder="Filter by Region" 
       options={options}
       onChange={handSelect}      
-      isClearable={true}
+      isClearable={true}     
       ></Select>
     </div>
   )
