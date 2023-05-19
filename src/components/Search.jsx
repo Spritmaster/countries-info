@@ -18,10 +18,11 @@ const Search = ({setCountries , getData}) => {
         }
     }
     const handleEnter = e =>{
-        if(e.key==="Enter" ){
-            searchCountry(name)
-        }else if( name ===""){
+        if( name ==="" && e.key==="Enter" ){
             getData()
+        }
+        else if(e.key==="Enter" ){
+            searchCountry(name)
         }
     }
   return (

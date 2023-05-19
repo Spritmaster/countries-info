@@ -2,7 +2,7 @@ import axios from 'axios'
 import React from 'react'
 import Select from 'react-select'
 
-const Filterselect = ({setCountries}) => {
+const Filterselect = ({setCountries ,getData}) => {
 
   const filterCountries =async (region)=> {
     try {
@@ -18,15 +18,21 @@ const Filterselect = ({setCountries}) => {
   }
 
   const options =[
+          { value: 'all',   label: 'All' },
           { value: 'africa',   label: 'Africa' },
           { value: 'america ', label: 'America' },
           { value: 'asia ',    label: 'Asia' },
-          { value: 'erope ',  label: 'Europe' },
+          { value: 'europe ',  label: 'Europe' },
           { value: 'oceania ', label: 'Oceania' }
   ]
 
   const handSelect =(e)=>{
-filterCountries(e.value)
+if(e.value!=="all"){
+  filterCountries(e.value)
+}
+else{
+  getData()
+}
   }
 
   return (

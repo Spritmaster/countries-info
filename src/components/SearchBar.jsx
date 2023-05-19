@@ -10,7 +10,7 @@ const SearchBar = ({setCountries ,getData}) => {
   return (
     <div className='mt-12 container mx-auto flex justify-between'>
         <Search getData={getData} setCountries={setCountries}></Search>
-        <Filterselect setCountries={setCountries}></Filterselect>
+        <Filterselect getData={getData} setCountries={setCountries}></Filterselect>
     </div>
   )
 }
