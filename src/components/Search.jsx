@@ -30,7 +30,7 @@ const Search = ({setCountries , getData}) => {
         <img src={iconser} alt="" />
         <input
         value={name}
-        onKeyUp={handleEnter}
+        onKeyDown={handleEnter}
         onChange={(e)=>setName(e.target.value)}
         className='outline-none placeholder-[#848484] text-sm' type="text "  placeholder='Search for a country…'/>
     </div>
